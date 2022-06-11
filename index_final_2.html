@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <script>
+	  
+	  let noun1 = prompt("Please enter your first name");
+	  let noun2 = prompt("Please enter your last name");
+	  
+	  alert("Welcome " + noun1 + " " + noun2 + " to my portfolio web site! Please press Enter or click OK to continue.");  
+
+	  </script>
+
+<style>
+
+body {
+     background-color: #D4E4F7;
+	 }
+
+table, th, td {
+  border:1px solid black;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px;
+  border-style: solid;
+  border-width: 15px;
+  border-color: #342309;
+			     
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+
+
+
+
+</style>
+</head>
+<body>
+<body>
+<a name="top"></a> 	
+  <p><a href="#RequiredProjects">Skip to main content</a></p>
+<header>
+  <center>
+    <h1>Nilo Alvarado's Web Portfolio</h1>
+	<img src="image1.jpg" alt="A Code Editor Image" width="410" height="205">
+  </center>
+  </header>
+  <h2>PGD100 - Coding from Scratch</h2>
+  <h3><a href="https://egcc.edu">Eastern Gateway Community College (EGCC)</a></h3>
+  <h4>4000 Sunset Blvd<br>
+  Steubenville, OH 43952</h4>
+  <h5><a href="mailto:nalvarado3045@student.egcc.edu">nalvarado3045@student.egcc.edu</a></h5>
+  <hr>
+  <p>I have used the skills that I learned in my introductory web development course at EGCC to create a portfolio website that showcases my programming projects.</p>
+  <hr>
+
+<table style="width:100%">
+  <tr>
+    <td><strong>Programming Languages Learned</strong></td>
+    <td><strong>Areas of Interest</strong></td>
+    <td><strong>Projects Completed</strong></td>
+  </tr>
+  <tr>
+    <td>HTML/CSS/JavaScript</td>
+    <td>Web Development</td>
+    <td>Static Website</td>
+  </tr>
+    <tr>
+    <td>Python</td>
+    <td>Blockchain</td>
+    <td>Blockchain Demo</td>
+  </tr>
+</table>
+
+  <p align="right"><a href="#top">Return to Top</a></p>
+<div class="row">
+  <div class="column" style="background-color:#B85B14;">
+    <center>
+      <h3><a name="MyProjects" id="MyProjects"></a>My Projects</h3>
+    </center>
+    <ul>
+      <li><strong>Blockchain</strong>
+        <ul>
+          <li>
+<a href="https://github.com/nfa1/DAGEcoin-Blockchain"><strong>Blockchain Demo</strong></a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#top"><strong>My Website</strong></a>
+      </li>
+    </ul>
+ <p align="right"><a href="#top">Return to Top</a></p>
+  </div>
+  <div class="column" style="background-color:#0247FE;">
+    <center>
+      <h3>My Favorite Sites</h3>
+    </center>
+    <ol>
+      <li>
+        <a href="https://github.com/nfa1"><strong>My GitHub</strong></a>
+      </li>
+      <li><a href="https://webstyleguide.com/"><strong>Web Style Guide</strong></a></li>
+      <li><a href="https://www.w3schools.com/"><strong>W3Schools</strong></a></li>
+    </ol>
+<p align="right"><a href="#top">Return to Top</a></p>	
+  </div>
+  <div class="column" style="background-color:#FB9902;">
+	<center>
+	<h3>Contact Me!</h3>
+	</center>   
+    <p>For more information on any of the above projects, please contact me at <a href="mailto:nalvarado3045@student.egcc.edu">nalvarado3045@student.egcc.edu</a></p>
+<p align="right"><a href="#top">Return to Top</a></p>
+  </div>
+
+</body>
+</html>
