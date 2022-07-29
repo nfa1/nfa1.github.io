@@ -1,138 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nilo Alvarado Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
 
-      <script>
-	  
-	  let noun1 = prompt("Please enter your first name");
-	  let noun2 = prompt("Please enter your last name");
-	  
-	  alert("Welcome " + noun1 + " " + noun2 + " to my portfolio web site! Please press Enter or click OK to continue.");  
-
-	  </script>
-
-<style>
-
-body {
-     background-color: #D4E4F7;
-	 }
-
-table, th, td {
-  border:1px solid black;
-}
-
-
-* {
-  box-sizing: border-box;
-}
+  div.text-center {     
+      width: 100%;
+      height: 100%;
+      background-color: #236AB9;
+      animation-name: example;
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+    }
+    
+    @keyframes example {
+      100%  {background-color: #FC7307;}
+        
+    }
 
 
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 10px;
-  height: 300px;
-  border-style: solid;
-  border-width: 15px;
-  border-color: #342309;
-			     
-}
-
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
   }
 
-
-
-
-</style>
+  </style>
 </head>
 <body>
-<body>
-<a name="top"></a> 	
-  <p><a href="#RequiredProjects">Skip to main content</a></p>
-<header>
-  <center>
-    <h1>Nilo Alvarado's Web Portfolio</h1>
-	<img src="image1.jpg" alt="A Code Editor Image" width="410" height="205">
-  </center>
-  </header>
-  <h2>PGD100 - Coding from Scratch</h2>
-  <h3><a href="https://egcc.edu">Eastern Gateway Community College (EGCC)</a></h3>
-  <h4>4000 Sunset Blvd<br>
-  Steubenville, OH 43952</h4>
-  <h5><a href="mailto:nalvarado3045@student.egcc.edu">nalvarado3045@student.egcc.edu</a></h5>
-  <hr>
-  <p>I have used the skills that I learned in my introductory web development course at EGCC to create a portfolio website that showcases my programming projects.</p>
-  <hr>
-
-<table style="width:100%">
-  <tr>
-    <td><strong>Programming Languages Learned</strong></td>
-    <td><strong>Areas of Interest</strong></td>
-    <td><strong>Projects Completed</strong></td>
-  </tr>
-  <tr>
-    <td>HTML/CSS/JavaScript</td>
-    <td>Web Development</td>
-    <td>Static Website</td>
-  </tr>
-    <tr>
-    <td>Python</td>
-    <td>Blockchain</td>
-    <td>Blockchain Demo</td>
-  </tr>
-</table>
-
-  <p align="right"><a href="#top">Return to Top</a></p>
-<div class="row">
-  <div class="column" style="background-color:#B85B14;">
-    <center>
-      <h3><a name="MyProjects" id="MyProjects"></a>My Projects</h3>
-    </center>
-    <ul>
-      <li><strong>Blockchain</strong>
-        <ul>
-          <li>
-<a href="https://github.com/nfa1/DAGEcoin-Blockchain"><strong>Blockchain Demo</strong></a>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a href="#top"><strong>My Website</strong></a>
-      </li>
-    </ul>
- <p align="right"><a href="#top">Return to Top</a></p>
+  <div class="jumbotron text-center" style="margin-bottom:0">
+    <h1>Nilo Alvarado</h1>
+    <h2>Front-End Engineer</h2>
   </div>
-  <div class="column" style="background-color:#0247FE;">
-    <center>
-      <h3>My Favorite Sites</h3>
-    </center>
-    <ol>
-      <li>
-        <a href="https://github.com/nfa1"><strong>My GitHub</strong></a>
-      </li>
-      <li><a href="https://webstyleguide.com/"><strong>Web Style Guide</strong></a></li>
-      <li><a href="https://www.w3schools.com/"><strong>W3Schools</strong></a></li>
-    </ol>
-<p align="right"><a href="#top">Return to Top</a></p>	
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">Projects</a>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/nfa1/JavaScript-CRUD-Project">JavaScript</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/nfa1/DAGEcoin-Blockchain">Python</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container" style="margin-top:30px">
+    <div class="row">
+      <div class="col-sm-4">
+        <h2>About Me</h2>
+        <div class="image1"><img src="image1.jpg" style='height: 100%; width: 100%; object-fit: contain' alt="image1"></div>
+        <p><strong>I am front-end engineer focused on writing clean code while producing attractive and user-friendly applications.</strong></p>
+        <h3>Contact Me</h3><button type="button" class="btn btn-primary"><a href="https://github.com/nfa1" style="color:inherit">GitHub</a></button> <button type="button" class="btn btn-primary"><a href="https://linkedin.com/in/nilo-alvarado-20b81021" style="color:inherit">LinkedIn</a></button> <button type="button" class="btn btn-primary"><a href="mailto:%20nalvarado3045@student.egcc.edu" style="color:inherit">Email</a></button>
+      </div>
+      <div class="col-sm-8">
+        <h2>Skills</h2>
+        <div>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>HTML</li>
+            <li>JavaScript</li>
+            <li>Bootstrap</li>
+            <li>jQuery</li>
+            <li>Python</li>
+            <li>PostgreSQL</li>
+            <li>Git</li>
+          </ul>
+        </div>
+        <h2>JavaScript: CRUD</h2>
+        <div class="image2">
+          <a href="https://github.com/nfa1/JavaScript-CRUD-Project"><img src="image2.jpg" style='height: 50%; width: 50%; object-fit: contain' alt="image2"></a>
+        </div>
+        <p><strong>A demo form for CRUD (Create, Read, Update, Delete) operations.</strong></p><br>
+        <h2>Python: Blockchain</h2>
+        <div class="image3">
+          <a href="https://github.com/nfa1/DAGEcoin-Blockchain"><img src="image3.jpg" style='height: 50%; width: 50%; object-fit: contain' alt="image3"></a>
+        </div>
+        <p><strong>A demo blockchain called DAGEcoin in Python.</strong></p>
+      </div>
+    </div>
   </div>
-  <div class="column" style="background-color:#FB9902;">
-	<center>
-	<h3>Contact Me!</h3>
-	</center>   
-    <p>For more information on any of the above projects, please contact me at <a href="mailto:nalvarado3045@student.egcc.edu">nalvarado3045@student.egcc.edu</a></p>
-<p align="right"><a href="#top">Return to Top</a></p>
+  <div class="jumbotron text-center" style="margin-bottom:0">
+    <p>© 2022 Nilo Alvarado</p>
   </div>
-
 </body>
 </html>
